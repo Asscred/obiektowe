@@ -1,0 +1,27 @@
+﻿<html>
+	<head>
+		<meta charset="utf-8"></meta>
+		<div style="color:black;font-size:20px;">
+		<script type="text/javascript">
+			function gra(nazwa_k,kategoria_k,producent_k)
+			{
+				this.nazwa=nazwa_k;
+				this.kategoria=kategoria_k;
+				this.producent=producent_k;
+			}
+
+			gra.prototype.wypisz = function () 
+			{
+				alert(this.nazwa +" "+ this.kategoria+" "+ this.producent);
+			};
+
+			var gra1 = new gra("Battlefield 2042", "FPS", "DICE"); 
+			var gra2 = new gra("Just Cause 3", "Sandbox", "2015");
+			gra1.wypisz(); 
+			gra2.wypisz();
+			document.write("dostęp do właściwości"+"<br>");
+
+			document.write("gra pierwszy"+" "+gra1.nazwa+" "+gra1.kategoria+" "+gra1.producent);
+		</script>
+	</head>
+</html>

@@ -1,0 +1,22 @@
+﻿<html>
+	<head>
+		<meta charset="utf-8"></meta>
+		<div style="color:black;font-size:20px;">
+		<script type="text/javascript">
+			var gra =
+			{
+				nazwa: 'Civilization IV',
+				kategoria: 'Strategia',
+				producent: 'Firaxis Games',
+				pokaz: function ()
+				{
+ 					document.write(this.nazwa + "<br>" + this.kategoria + "<br>" + this.producent)
+ 		  		}
+			}
+			gra.pokaz();
+			gra.datawydania="2005";
+			gra.wypisz=function() {alert('Data wydania: ' + this.datawydania)}
+			gra.wypisz();
+		</script>
+	</head>
+</html>
